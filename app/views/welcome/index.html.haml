@@ -1,1 +1,32 @@
-%h1 This is the the welcome placeholder
+#banner
+  .banner_content
+    %h1 Notebook
+    %p Your online notebook. Never forget an idea again.
+    %button= link_to "Sign up", new_user_registration_path
+
+#testimonial
+  .wrapper
+    %p.quote "The greatest notebook application. Period."
+    %p.name - Rayhan Mursalin
+
+#callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Always online
+        %p You can see & edit your notes anywhere anytime.
+      .callout
+        %h2 Save Trees
+        %p Save trees by taking notes online instead of writing it on paper.
+      .callout
+        %h2 Free
+        %p The Notebook is and always will be free.
+
+#bottom_cta
+  .wrapper
+    %h2 For Realz!
+    %p I want you to sign up
+    %button= link_to "Sign up", new_user_registration_path
+
+%footer
+  %p Copyright &copy; 2015 <a href ="http://rayhanmursalin.com"> Rayhan Mursalin</a>
