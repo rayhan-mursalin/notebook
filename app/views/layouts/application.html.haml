@@ -15,7 +15,7 @@
           = link_to "New note", new_note_path
           = link_to "Sign out", destroy_user_session_path, method: :delete
         - else
-          = link_to "Log in", new_user_session_path
+          = link_to "Log in", new_user_session_path, class: "button-login"
   %p.notice= notice
   %p.alert= alert
 
