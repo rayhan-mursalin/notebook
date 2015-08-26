@@ -56,9 +56,10 @@ button, .button {
 }
 .button-login {
 	padding: .5rem 2rem;
+	margin-top: 2em;
 	border-radius: 2rem;
 	text-decoration: none;
-	color: #3bb8db;
+	color: red;
 	border: 5px solid #E9E9E9;
 	@include bold_font;
 	background: transparent;
@@ -92,11 +93,12 @@ header {
 			a {
 				text-decoration: none;
 				color: white;
-				font-size: 1.1rem;
-				line-height: 1.5;
+				background-color: $green;
+				font-size: 1 rem;
+				line-height: 3.5;
 				margin-left: 1rem;
 				&:hover {
-					color: $green;
+					color: $dark_gray;
 				}
 			}
 		}
@@ -129,4 +131,9 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 textarea {
 	min-height: 200px;
+}
+
+.alert {
+	text-align: center;
+	color: blue;
 }

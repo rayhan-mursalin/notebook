@@ -12,11 +12,11 @@
       = link_to image_tag('logo.png'), root_path, id: "logo"
       %nav
         - if user_signed_in?
-          = link_to "New note", new_note_path
-          = link_to "Sign out", destroy_user_session_path, method: :delete
+          = link_to "New note", new_note_path,  class: "button-login"
+          = link_to "Sign out", destroy_user_session_path, method: :delete, class: "button-login"
         - else
-          = link_to "Log in", new_user_session_path, class: "button-login"
-  %p.notice= notice
-  %p.alert= alert
+          = link_to "Log In", new_user_session_path, class: "button-login"
+          %p.notice= notice
+          %p.alert= alert
 
   = yield
